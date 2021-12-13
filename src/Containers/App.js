@@ -5,6 +5,7 @@ import { robots } from "../Robots";
 import SearchBox from "../Components/SearchBox";
 import Scroll from "../Components/Scroll";
 import ErrorBoundry from "../Components/ErrorBoundry";
+import "../Containers/App.css";
 class App extends Component {
   constructor() {
     super();
@@ -30,7 +31,7 @@ class App extends Component {
     });
     return (
       <div>
-        <h1>Robo Friend</h1>
+        <h1 className="h1">Robo Friend</h1>
 
         <SearchBox searchchange={this.onsearchchange} />
         <Scroll>
