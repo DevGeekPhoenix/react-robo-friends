@@ -5,7 +5,7 @@ const Cardlist = ({ robots }) => {
   //   throw new Error("Oooh Shit!!!");
   // }
   return (
-    <div>
+    <div className="cardsbox">
       {robots.map((user, i) => {
         return (
           <Card
