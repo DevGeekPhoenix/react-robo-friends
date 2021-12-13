@@ -1,10 +1,11 @@
 h1 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: larger;
+  font-family: cursive;
   color: #502999;
   text-align: center;
 }
 .searchbox {
+  font-family: cursive;
+  color: #f46565;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -16,6 +17,10 @@ h1 {
   outline: none;
   border-radius: 9999em;
 }
+.searchbox::placeholder {
+  font-family: cursive;
+  color: #f46565;
+}
 .cards {
   background: linear-gradient(21deg, #d3182a, #f46565);
   border-radius: 25px;
@@ -24,7 +29,8 @@ h1 {
   align-items: center;
   margin: 1%;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-
+  color: #502999;
+  font-family: cursive;
   transition: 0.3s;
   width: 20%;
 }
