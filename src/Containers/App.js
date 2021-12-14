@@ -29,18 +29,21 @@ class App extends Component {
         .toLowerCase()
         .includes(this.state.SearchValue.toLowerCase());
     });
-    return (
-      <div>
-        <h1 className="h1">Robo Friend</h1>
-
-        <SearchBox searchchange={this.onsearchchange} />
-        <Scroll>
-          <ErrorBoundry>
-            <CardList robots={filteredRobot} />
-          </ErrorBoundry>
-        </Scroll>
-      </div>
-    );
+    if (this.state.robots.length === 0) {
+      return <h1>Loading Please Wait...</h1>;
+    } else {
+      return (
+        <div>
+          <h1 className="h1">Robo Friend</h1>
+          <SearchBox searchchange={this.onsearchchange} />
+          <Scroll>
+            <ErrorBoundry>
+              <CardList robots={filteredRobot} />
+            </ErrorBoundry>
+          </Scroll>
+        </div>
+      );
+    }
   }
 }
 

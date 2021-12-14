@@ -4,6 +4,7 @@ const Cardlist = ({ robots }) => {
   // if (true) {
   //   throw new Error("Oooh Shit!!!");
   // }
+
   return (
     <div className="cardsbox">
       {robots.map((user, i) => {
@@ -19,5 +20,4 @@ const Cardlist = ({ robots }) => {
     </div>
   );
 };
-
 export default Cardlist;
