@@ -32,11 +32,9 @@ h1 {
   color: #502999;
   font-family: cursive;
   transition: 0.3s;
-  width: 20%;
 }
 .cardsbox {
-  width: 90%;
-  margin: auto;
+  margin: auto 60px;
   display: flex;
   padding: 20px;
   flex-wrap: wrap;
@@ -44,4 +42,7 @@ h1 {
 
 .cards:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0);
+}
+.robopics {
+  height: 250px;
 }
