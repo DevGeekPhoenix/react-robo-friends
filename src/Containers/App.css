@@ -46,3 +46,23 @@ h1 {
 .robopics {
   height: 250px;
 }
+.modal {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: auto;
+  position: absolute;
+}
+.closemodalbtn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 9999em;
+  width: 10%;
+  height: 10%;
+}
+.leaflet-container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}

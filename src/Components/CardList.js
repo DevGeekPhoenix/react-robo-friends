@@ -1,6 +1,6 @@
 import Card from "./Card";
 
-const Cardlist = ({ robots }) => {
+const Cardlist = ({ robots, handlemodal }) => {
   // if (true) {
   //   throw new Error("Oooh Shit!!!");
   // }
@@ -10,7 +10,9 @@ const Cardlist = ({ robots }) => {
       {robots.map((user, i) => {
         return (
           <Card
+            handlemodal={handlemodal}
             key={i}
+            robot={robots[i]}
             id={robots[i].id}
             name={robots[i].name}
             email={robots[i].email}
